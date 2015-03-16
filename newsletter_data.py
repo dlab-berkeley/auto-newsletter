@@ -21,6 +21,15 @@ def pull_dates(content):
 	"""
 	return content.find_all('span', class_ = 'date-display-single')
 
+def status(content):
+	""" This returns the registration status, whether it's 'waiting list'(full) or 'register'(has vacancies)"""
+	return content.find_all('a', class_ = 'register-link')
+	
+url = 'http://dlab.berkeley.edu/training'
+page = bs4.BeautifulSoup(urllib2.urlopen(url).read())
+for word in status(page):
+	print(word)
+
 
 def main():
 	pass
