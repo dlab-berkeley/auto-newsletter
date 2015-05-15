@@ -21,7 +21,14 @@ def pull_dates(content):
 	"""
 	return content.find_all('span', class_ = 'date-display-single')
 
-
+page = training_html()
+for title in pull_titles(page):
+	print(title)
+for date in pull_dates(page):
+	print(date)
+for link in status(page):
+	print(link)
+	
 def main():
 	pass
 
