@@ -88,10 +88,10 @@ def main():
 	soup = BeautifulSoup(r.content, 'html.parser')
 	content = soup.find_all('div', class_ = 'view-content')[1]
 	ts = []
-	# today = datetime.datetime.today().isoweekday()
-	# startDate = datetime.date.today() + datetime.timedelta(days = 8 - today)
+	today = datetime.datetime.today().isoweekday()
+	startDate = datetime.date.today() + datetime.timedelta(days = 8 - today)
 
-	startDate = datetime.date(2015, 9, 14)
+	# startDate = datetime.date(2015, 9, 14)
 	
 	endDate = startDate + datetime.timedelta(days = 13)
 	for training in content.children:
