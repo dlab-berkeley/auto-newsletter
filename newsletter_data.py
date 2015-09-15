@@ -89,11 +89,11 @@ def main():
 	content = soup.find_all('div', class_ = 'view-content')[1]
 	ts = []
 	today = datetime.datetime.today().isoweekday()
-	startDate = datetime.date.today() + datetime.timedelta(days = 8 - today)
+	startDate = datetime.date.today() + datetime.timedelta(days = 5 - today)
 
 	# startDate = datetime.date(2015, 9, 14)
 	
-	endDate = startDate + datetime.timedelta(days = 13)
+	endDate = startDate + datetime.timedelta(days = 14)
 	for training in content.children:
 		# pdb.set_trace()
 		try:
