@@ -12,3 +12,4 @@ The goal is to create a set of scripts that automatically generates the weekly n
     - training description
 * create a plain text file with the scraped information embedded
 * this script will generate the newsletter from the Friday in the current week to the Friday 2 weeks later.
+* this script is also capable of fetching all the past archived training with information of title, date and instructor.
