@@ -14,7 +14,7 @@ The goal is to create a set of scripts that automatically generates the weekly n
 * this script will generate the newsletter from the Friday in the current week to the Friday 2 weeks later.
 * this script is also capable of fetching all the past archived training with information of title, date and instructor.
 
-# Setup
+## Setup
     * One-time setup:
         - Get Python installation package from www.python.org if you don't have Python installed.
         - Go to pip.pypa.io/en/stable/installing/ and follow the instruction to install pip if you don't have pip installed.
