@@ -1,4 +1,4 @@
-import requests, datetime, pdb, re
+import requests, datetime, pdb, re, sys
 
 from bs4 import BeautifulSoup
 
@@ -158,7 +158,10 @@ def pullCurrentTrainings():
 	return ts
 
 if __name__ == '__main__':
-	current_trainings = pullCurrentTrainings()
-	past_trainings = pullPastTrainings()
-	fileOutput(current_trainings, 'current_trainings.txt')
-	fileOutput(past_trainings, 'past_trainings.txt')
+	if sys.argv[1] == 'past_training':
+		past_trainings = pullPastTrainings()
+		fileOutput(past_trainings, 'past_training.txt')
+	else:
+		current_trainings = pullCurrentTrainings()
+		fileOutput(current_trainings, 'current_training.txt')
+	
