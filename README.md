@@ -15,10 +15,10 @@ The goal is to create a set of scripts that automatically generates the weekly n
 * this script is also capable of fetching all the past archived training with information of title, date and instructor.
 
 ## Setup
-    * One-time setup:
-        - Get Python installation package from www.python.org if you don't have Python installed.
-        - Go to pip.pypa.io/en/stable/installing/ and follow the instruction to install pip if you don't have pip installed.
-    * To generate the newsletter:
-        - cd into your directory storing the Python file.
-        - In the terminal run command 'python newsletter_data.py past_training' to generate all past training.
-        - Run command 'python newsletter_data.py current_training' to generate training in the next two weeks.
+* One-time setup:
+    - Get Python installation package from www.python.org if you don't have Python installed.
+    - Go to pip.pypa.io/en/stable/installing/ and follow the instruction to install pip if you don't have pip installed.
+* To generate the newsletter:
+    - cd into your directory storing the Python file.
+    - In the terminal run command 'python newsletter_data.py past_training' to generate all past training.
+    - Run command 'python newsletter_data.py current_training' to generate training in the next two weeks.
